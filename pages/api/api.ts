@@ -10,3 +10,11 @@ export async function getMovie(title: string) {
 export const getUsers = async () => {
   return (await fetch(`${BASE_URL}`)).json();
 };
+
+export interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string,
+  phone: string;
+}

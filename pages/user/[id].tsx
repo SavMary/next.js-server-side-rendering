@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {MainPage} from "@/Components/MainPage/MainPage";
 import {BASE_URL} from "@/pages/api/api";
-import {User} from "@/next-env";
+import {User} from "@/pages/api/api";
 import {NextPageContext} from 'next';
 import {useRouter} from 'next/router';
 
