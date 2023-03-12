@@ -44,7 +44,6 @@ UserPage.getInitialProps = async ( ctx: NextPageContext ) => {
 
     const response = await fetch(`${BASE_URL}.${ctx.query.id}`)
     const user: User = await response.json()
-    console.log(user)
 
     return {
         user
