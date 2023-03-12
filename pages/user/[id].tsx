@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {MainPage} from "@/Components/MainPage/MainPage";
-import {BASE_URL} from "@/pages/api/api";
-import {User} from "@/pages/api/api";
+import {BASE_URL, User} from "@/pages/api/api";
 import {NextPageContext} from 'next';
-import {useRouter} from 'next/router';
+// import {useRouter} from 'next/router';
 
 
 type Props = {
