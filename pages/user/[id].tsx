@@ -1,15 +1,15 @@
 import React from "react";
 import {MainPage} from "@/Components/MainPage/MainPage";
-import {BASE_URL, User} from "@/pages/api/api";
-import {NextPageContext} from 'next';
+// import {BASE_URL, User} from "@/pages/api/api";
+// import {NextPageContext} from 'next';
 // import {useRouter} from 'next/router';
 
 
-type Props = {
-    user: User
-};
+// type Props = {
+//     user: User
+// };
 
-export default function UserPage({ user }: Props) {
+export default function UserPage() {
     // const router = useRouter();
     // const [userFromServer, setUserFromServer] = useState<User>();
 
@@ -26,27 +26,27 @@ export default function UserPage({ user }: Props) {
 
     return (
         <MainPage>
-            <h1>{user?.name}</h1>
+            <h1>User</h1>
         </MainPage>
     )
 }
 
-interface UserNextPageContext extends NextPageContext {
-    query: {
-        id: string
-    }
-}
+// interface UserNextPageContext extends NextPageContext {
+//     query: {
+//         id: string
+//     }
+// }
 
-UserPage.getInitialProps = async ( ctx: NextPageContext ) => {
-    // if (!req) {
-    //     return {user: null}
-    // }
-
-    const response = await fetch(`${BASE_URL}.${ctx.query.id}`)
-    const user: User = await response.json()
-
-    return {
-        user
-    }
-
-}
+// UserPage.getInitialProps = async ( ctx: NextPageContext ) => {
+//     // if (!req) {
+//     //     return {user: null}
+//     // }
+//
+//     const response = await fetch(`${BASE_URL}.${ctx.query.id}`)
+//     const user: User = await response.json()
+//
+//     return {
+//         user
+//     }
+//
+// }

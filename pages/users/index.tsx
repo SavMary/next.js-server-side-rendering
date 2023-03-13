@@ -1,13 +1,13 @@
 import {NextPage} from "next";
 import styles from "./Users.module.css";
-import {BASE_URL, User} from "@/pages/api/api";
+import {BASE_URL, User, users} from "@/pages/api/api";
 import {MainPage} from "@/Components/MainPage/MainPage";
 
 type Props = {
     users: User[]
 };
 
- const Users: NextPage<Props> = ({ users }) => {
+ const Users: NextPage<Props> = () => {
     return (
         <MainPage>
             <table className={styles["table"]}>
@@ -38,10 +38,10 @@ type Props = {
 
 export default Users;
 
-Users.getInitialProps = async () => {
-    const response =  await fetch(`${BASE_URL}`);
-    const users = await response.json();
-    return {
-        users: users.slice(0,10)
-    }
-}
+// Users.getInitialProps = async () => {
+//     const response =  await fetch(`${BASE_URL}`);
+//     const users = await response.json();
+//     return {
+//         users: users.slice(0,10)
+//     }
+// }

@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import {MainPage} from "@/Components/MainPage/MainPage";
 
 export default function Csr() {
