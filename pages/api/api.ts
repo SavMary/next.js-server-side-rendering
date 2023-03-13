@@ -1,15 +1,15 @@
-export const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=886e5c53&t=';
-export const BASE_URL = "https://mate.academy/students-api/users";
-
-export async function getMovie(title: string) {
-  const response = await fetch(`${API_URL}${title}`);
-
-  return response.json();
-}
-
-export const getUsers = async () => {
-  return (await fetch(`${BASE_URL}`)).json();
-};
+// export const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=886e5c53&t=';
+// export const BASE_URL = "https://mate.academy/students-api/users";
+//
+// export async function getMovie(title: string) {
+//   const response = await fetch(`${API_URL}${title}`);
+//
+//   return response.json();
+// }
+//
+// export const getUsers = async () => {
+//   return (await fetch(`${BASE_URL}`)).json();
+// };
 
 export const users: User[] = [
     {"id":1,"name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","phone":"1-770-736-8031 x56442"},

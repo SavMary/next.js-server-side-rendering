@@ -1,6 +1,6 @@
 import {NextPage} from "next";
 import styles from "./Users.module.css";
-import {BASE_URL, User, users} from "@/pages/api/api";
+import {User, users} from "@/pages/api/api";
 import {MainPage} from "@/Components/MainPage/MainPage";
 
 type Props = {
