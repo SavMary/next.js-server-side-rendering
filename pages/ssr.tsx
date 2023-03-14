@@ -12,7 +12,7 @@ import Button from "@/Components/Button/Button";
     return (
         <MainPage>
             <h1>Server Side Rendering</h1>
-            {!isClick && <Button clickHandler={clickHandler}/>}
+            {!isClick && <Button clickHandler={clickHandler} link={"/users"} text={"users"}/>}
         </MainPage>
     )
 }

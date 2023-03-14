@@ -7,10 +7,10 @@ import {MainPage} from "@/Components/MainPage/MainPage";
 
 export default function ErrorPage() {
 return (
-    <MainPage>
+    <>
         <p className={styles["error__wrapper"]}>
             Back to <Link href={"/"} className={styles["error"]}>Main Page</Link>
         </p>
-    </MainPage>
+    </>
 )
 };

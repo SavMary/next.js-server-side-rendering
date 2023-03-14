@@ -1,7 +1,6 @@
 import React from "react";
 import styles from '@/styles/Home.module.css'
 import {Header} from "@/Components/Header/Header";
-import Image from "next/image";
 import Link from "next/link";
 import {Inter} from "next/font/google";
 import Head from "next/head";
@@ -19,7 +18,7 @@ export const MainPage = ({children}) => (
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header/>
-        <main className={styles["center"]}>
+        <main className={styles["center__wrapper"]}>
             {children}
         </main>
         <nav className={styles.grid}>

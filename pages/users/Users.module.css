@@ -3,8 +3,47 @@
     border-collapse: collapse;
 }
 
-.table__row {
-    border: 1px solid #777;
-    padding: 0.5rem;
+.table__th {
+    font-size: 9px;
     text-align: center;
+
+    border: 1px solid #777;
+    padding: 0.1rem;
+
+    width: 100px;
+}
+
+.table__th-id {
+    width: 50px;
+}
+
+.table__head {
+    display: flex;
+}
+
+.table__row {
+    display: flex;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.table__row:hover {
+    background-color: #ccc8c8;
+}
+
+@media (min-width: 1000px) {
+    .table__th {
+        border: 1px solid #777;
+        padding: 0.5rem;
+        text-align: center;
+
+        font-size: 16px;
+
+        width: 400px;
+    }
+
+    .table__th-id {
+        width: 100px;
+    }
 }

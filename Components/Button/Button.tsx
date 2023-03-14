@@ -5,13 +5,15 @@ import Link from "next/link";
 
 type Props = {
     clickHandler: () => void;
+    link: string;
+    text: string
 }
- const Button: NextPage<Props> = ({clickHandler}) =>{
+ const Button: NextPage<Props> = ({clickHandler, link, text}) =>{
     return (
 
-            <Link href={"./users"}>
+            <Link href={link}>
                 <button onClick={clickHandler} className={styles["button"]}>
-                Upload users from server
+                    {`Upload ${text} from server`}
                 </button>
             </Link>
     )
