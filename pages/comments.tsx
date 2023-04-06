@@ -14,28 +14,19 @@ const Comments: NextPage<Props> = ({comments}) => {
     return (
         <MainPage>
             <table className={styles["table"]}>
-                {/*<div className={styles["table__head"]}>*/}
                     <tr>
                     <th className={classNames(styles["table__th"], styles["table__th-id"])}>id</th>
                     <div className={styles["table__th"]}>name</div>
                     <th className={styles["table__th"]}>comment</th>
-                    {/*<th className={styles["table__row"]}>email</th>*/}
-                    {/*<th className={styles["table__row"]}>phone</th>*/}
                     </tr>
-                {/*</div>*/}
-                {/*<div>*/}
+
                 {comments.map(comment => (
                     <tr key={comment.id} >
-                        {/*<Link href={`/user/[id]`} as={`/user/${comment.id}`} className={styles["table__row"]}>*/}
                             <td className={classNames(styles["table__th"], styles["table__th-id"])}>{comment.id}</td>
                             <td className={styles["table__th"]}>{comment.name}</td>
                             <td className={styles["table__th"]}>{comment.body}</td>
-                        {/*</Link>*/}
-                        {/*<td className={styles["table__row"]}>{user.email}</td>*/}
-                        {/*<td className={styles["table__row"]}>{user.phone}</td>*/}
                     </tr>
                 ))}
-                {/*</div>*/}
             </table>
         </MainPage>
     );
