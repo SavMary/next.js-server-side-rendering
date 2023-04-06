@@ -1,38 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## **Project Title**
+This project demonstrates different types of data rendering using Next.js, including server-side rendering (SSR), static site generation (SSG), incremental static regeneration (ISR), and client-side rendering (CSR). The project is written in TypeScript using React and fetches all data from the https://mate.academy/students-api API.
 
-## Getting Started
+**Getting Started**
 
-First, run the development server:
+To get started, clone the repository and run the following command:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+`npm install`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will install all the necessary dependencies. Once the installation is complete, you can start the development server by running:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+`npm run dev`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/api.ts`.
+This will start the server on http://localhost:3000.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project includes the following features:
 
-## Learn More
+* SSR: Server-side rendering is used to generate the initial HTML page on the server, which is then sent to the client. This improves SEO and initial page load time.
+* SSG: Static site generation is used to generate pre-built HTML pages at build time. This improves performance for pages that don't change frequently.
+* ISR: Incremental static regeneration is used to generate new HTML pages at runtime when data changes. This allows for dynamic content while still benefiting from the performance improvements of SSG.
+* CSR: Client-side rendering is used to fetch and render data on the client after the initial page load. This allows for highly dynamic content.
+*
+**Technologies**
 
-To learn more about Next.js, take a look at the following resources:
+This project uses the following technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Next.js: A React-based framework for building server-rendered applications.
+* TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+* React: A JavaScript library for building user interfaces.
+* Fetch API: A modern, promise-based API for making HTTP requests.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**API Reference**
 
-## Deploy on Vercel
+All data is fetched from the https://mate.academy/students-api API. Please refer to their documentation for details on the available endpoints and data format.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Acknowledgments**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project was inspired by the Next.js documentation.
+Thanks to the team at https://mate.academy/students-api for providing the data used in this project.
